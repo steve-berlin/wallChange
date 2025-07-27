@@ -7,7 +7,8 @@ script_path = os.path.expanduser("~/wallChange/wallchange.sh")
 
 wallnum = 0
 while True:
-    sleep(10)
+    minute = 60
+    sleep(5 * 60)
     wallnum += 1
     if wallnum > 11:
         wallnum = 1
