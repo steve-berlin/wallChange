@@ -1,9 +1,15 @@
 from time import sleep
 import subprocess
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Access environment variables
+USER = os.getenv("USER")
 
 # Use absolute path, expanding ~
-script_path = os.path.expanduser("~/wallChange/wallchange.sh")
+script_path = os.path.expanduser(f"/home/{USER}/wallChange/wallchange.sh")
 
 wallnum = 0
 while True:
