@@ -6,7 +6,7 @@ A desktop utility that runs via the cli and changes the desktop wallpaper on a r
 3. In the clone's folder, do `chmod +x wallchange.py`.
 4. In your shell's configuration file (`.zshrc`,`.bashrc` or other)
    add `nohup path/to/project/files < /dev/null &> nohup.out &`
-5. Enojoy!
+5. Enjoy!
 
 ## _NOTE_
 _If you enojoyed using this repo, consider giving the project a star, it will be very appreciated!_
