@@ -1,9 +1,6 @@
-from time import sleep
+import time  # import sleep
 import subprocess
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # Access environment variables
 USER = os.getenv("USER")
@@ -13,8 +10,9 @@ script_path = os.path.expanduser(f"/home/{USER}/wallChange/wallchange.sh")
 
 wallnum = 0
 while True:
-    minute = 60
-    sleep(5 * 60)
+    minute_in_secs = 60
+    minutes = 0.25
+    time.sleep(minutes * minute_in_secs)
     wallnum += 1
     if wallnum > 11:
         wallnum = 1
