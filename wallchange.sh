@@ -11,7 +11,7 @@ if [[ "$wallnum" -gt "$amount" ]]; then
 fi
 
 # Find the absolute path
-WALLPAPER_PATH="$(realpath "wallpapers/$wallnum.jpg")"
+WALLPAPER_PATH="$(realpath "themes/$wallnum.jpg")"
 DBUS_PATH="file://$WALLPAPER_PATH"
 
 qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "
