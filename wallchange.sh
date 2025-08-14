@@ -1,6 +1,7 @@
 #!/bin/bash
 
 wallnum="$1"
+theme="$2"
 amount=11
 if ! [[ "$wallnum" =~ ^[0-9]+$ ]]; then
   echo "Usage: $0 <wallpaper_number>"
@@ -11,7 +12,7 @@ if [[ "$wallnum" -gt "$amount" ]]; then
 fi
 
 # Find the absolute path
-WALLPAPER_PATH="$(realpath "themes/$wallnum.jpg")"
+WALLPAPER_PATH="$(realpath "themes/$theme/$wallnum.jpg")"
 DBUS_PATH="file://$WALLPAPER_PATH"
 
 qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "

@@ -18,4 +18,4 @@ while True:
     if wallnum > 11:
         wallnum = 1
     # Prefer running with bash; don't pass the "~"
-    subprocess.run(["bash", script_path, str(wallnum)])
+    subprocess.run(["bash", script_path, str(wallnum), wallrc.theme])
